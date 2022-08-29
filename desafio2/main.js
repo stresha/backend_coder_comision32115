@@ -75,33 +75,34 @@ class Contenedor {
 const product1 = {
     "title": "Lampara Gato",
     "price": 1000,
-    "id": 1
+    "id": 1,
+    "thumbnail": "https://i.postimg.cc/1XjWByBJ/lampara-cat4.jpg"
   }
 const product2 = {
     "title": "Velador 3D",
     "price": 2000,
-    "id": 2
+    "id": 2,
+    "thumbnail": "https://i.postimg.cc/Dy5f2HZ5/lampara-cat7.jpg"
   }
 const product3 = {
-    "title": "Guirnalda estrellas",
+    "title": "Lampara Sal",
     "price": 1900,
-    "id": 3
+    "id": 3,
+    "thumbnail": "https://i.postimg.cc/W4N4mVHB/lamapra-sal2.jpg"
   }
 const product4 = {
-    "title": "Tira led RGB",
+    "title": "Velador Gato Amarillo",
     "price": 1600,
-    "id": 4
+    "id": 4,
+    "thumbnail": "https://i.postimg.cc/gkhrmNhT/lampara-cat.jpg"
   }
   const product5 = {
     "title": "Lampara Reno",
     "price": 1800,
-    "id": 4
+    "id": 4,
+    "thumbnail": "https://i.postimg.cc/15RPYBHF/map.jpg"
   }
-  const product6 = {
-    "title": "Tra a pilas",
-    "price": 1200,
-    "id": 4
-  }
+  
 
   //FUNCION
 async function challenge(){
@@ -125,12 +126,10 @@ async function challenge(){
     let id4= await file.save(product4)
     console.log(`ID of product: ${id4}`);
     console.log('--')
-    let id5= await file.save(product4)
+    let id5= await file.save(product5)
     console.log(`ID of product: ${id5}`);
     console.log('--')
-    let id6= await file.save(product4)
-    console.log(`ID of product: ${id6}`);
-    console.log('--')
+   
 
     console.log('Products: ')
     objs = await file.getAll();
