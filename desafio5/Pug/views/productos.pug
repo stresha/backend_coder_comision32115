@@ -1,0 +1,28 @@
+doctype html 
+html(lang="es")
+head
+    title PUG
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    
+body 
+    h1 Lista de Productos 
+    if productos
+    tr
+      th TITULO
+      th PRECIO
+      th IMAGEN
+    br
+    each prod in productos 
+        tr
+            td= prod.title 
+            td= prod.price 
+            td
+            img(src=prod.thumbnail)
+        
+    else 
+        span NO HAY PRODUCTOS DISPONIBLES 
+
+    a(href="/")
+        button CARGA DE PRODUCTO

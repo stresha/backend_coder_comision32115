@@ -1,0 +1,39 @@
+<div>
+
+      <div class="container py-3">
+        <header>
+          <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+            <a href="#" class="d-flex align-items-center text-dark text-decoration-none">
+              <span class="fs-4">VER TODO</span>
+            </a>
+            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+              <a class="me-3 p-3 text-dark text-decoration-none bg-warning  rounded-circle" href="/">CARGA DE PRODUCTO</a>
+            </nav>
+          </div>
+        </header>
+      </div>
+
+      <div class="container-lg p-5 ml-4  ">
+        <table class="table table-dark table-striped-columns  ">
+            <thead>
+              <tr>
+                <th scope="col">PRODUCTO</th>
+                <th scope="col">PRECIO</th>
+                <th scope="col">IMAGEN</th>
+              </tr>  
+            </thead>
+               {{#if productos.length}}
+               {{#each productos}}
+            <tbody>
+              <tr>
+                <td>{{this.title}}</td>
+                <td>{{this.price}}</td>
+                <td><img height="72px" width="72px" src={{this.thumbnail}} /></td>
+              </tr>
+                {{/each}}
+                {{/if}}
+            </tbody>
+
+        </table>
+      </div>
+</div>

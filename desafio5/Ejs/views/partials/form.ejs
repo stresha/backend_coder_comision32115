@@ -1,0 +1,42 @@
+
+    <div class="container py-3">
+        <header>
+          <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+            <a href="#" class="d-flex align-items-center text-dark text-decoration-none">
+              <span class="fs-4">Buenas tardes carga tu producto aca !</span>
+            </a>
+      
+            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+              <a class="me-3 p-3 text-dark text-decoration-none bg-warning  rounded-circle" href="/productos">VER TODO</a>
+
+            </nav>
+          </div>
+      
+        </header>
+    </div>
+
+    <div class="bg-black container-lg p-4 fw-bolder text-warning text-center  border border-warning ">
+        <form action="/productos" method="post">
+           <div class="row">
+               <div class="col-lg-12 mb-2">
+                <label for="exampleFormControlInput1" class="form-label">NOMBRE</label>
+                <input type="text"  name="title" class="form-control form-control-lg fs-6  rounded-pill  p-3 ">
+               </div>
+               <div class="col-lg-12 mb-2">
+                <label for="exampleFormControlInput1" class="form-label" name="thumbnail">IMAGEN</label>
+                   <input type="text" name="thumbnail" class="form-control form-control-lg fs-6 rounded-pill p-3">
+                </div>
+               <div class="col-lg-12 mb-2">
+                <label for="exampleFormControlInput1" class="form-label" >PRECIO</label>
+                   <input type="number"  name="price" class="form-control form-control-lg fs-6 rounded-pill p-3">
+               </div>
+           </div>
+
+           <div class="row">
+               <div class="col-lg-12">
+                   <button type="submit" class=" bg-warning btn btn-success px-3">AGREGAR</button>
+               </div>
+           </div>
+        </form>
+    </div>
+
