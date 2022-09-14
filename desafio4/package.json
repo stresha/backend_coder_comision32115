@@ -1,0 +1,28 @@
+{
+  "name": "prog_backend_entregable_4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "express": "nodemon serverExpress.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/analopez2/Prog_Backend_Entregable_4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/analopez2/Prog_Backend_Entregable_4/issues"
+  },
+  "homepage": "https://github.com/analopez2/Prog_Backend_Entregable_4#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
