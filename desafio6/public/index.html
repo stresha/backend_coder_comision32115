@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 6 - Websockets</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+</head>
+
+<body class="hola">
+    <div id="product-form_container">
+        <div class="formulario-titulo">
+            <img  class="formulario-img" src="https://i.postimg.cc/q7F0trr7/zz.png" width="90" alt="img">
+            <h1 >Bienvenido ! - Por favor ingrese el producto</h1>
+        </div>
+        <form class="formulario-agregar">
+            Nombre <input class="formulario-cont"  type="text" id="title" > 
+            Link <input class="formulario-cont" type="text" id="thumbnail"> 
+            Precio <input class="formulario-cont" type="number" id="price" > 
+            
+            <input id="add-product" type="button" class="formulario-button" value="Enviar">
+        </form>
+    </div>
+
+    <div id="products" class="products-list"></div>
+   
+    <h1   class="formulario-titulo">Chat en linea</h1>
+    <div class="chat">
+        <div>
+        <form onsubmit="return enviarMensaje() " class="chat-form">
+           Mail <input type="email" id="email" class="formulario-cont" >
+           Mensaje <input type="text" id="mensaje" class="formulario-cont" >
+            <input type="submit" value="Enviar" class="formulario-button">
+        </form>
+    </div>
+           
+    <div id="listaMensajes" class="chat-cont">
+
+    </div>
+    </div>
+   
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
