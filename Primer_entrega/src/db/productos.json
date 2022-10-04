@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Velador Gato",
+    "price": 2000,
+    "thumbnail": "https://i.postimg.cc/1XjWByBJ/lampara-cat4.jpg",
+    "stock": 10
+  },
+  {
+    "id": 2,
+    "title": "Velador Gato Amarillo",
+    "price": 2500,
+    "thumbnail": "https://i.postimg.cc/gkhrmNhT/lampara-cat.jpg",
+    "stock": 150
+  },
+  {
+    "id": 3,
+    "title": "Lampara Sal",
+    "price": 1500,
+    "thumbnail": "https://i.postimg.cc/W4N4mVHB/lamapra-sal2.jpg",
+    "stock": 80
+  },
+  {
+    "id": 4,
+    "title": "Lampara Reno",
+    "price": 1000,
+    "thumbnail": "https://i.postimg.cc/15RPYBHF/map.jpg",
+    "stock": 50
+  },
+  {
+    "id": 5,
+    "title": "Lampara cat 3d",
+    "price": 1000,
+    "thumbnail": "https://i.postimg.cc/Dy5f2HZ5/lampara-cat7.jpg",
+    "stock": 55
+  }
+]

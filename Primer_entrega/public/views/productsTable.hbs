@@ -1,0 +1,27 @@
+<h2 class="titleList">Nuestros Prodctos !</h2>
+<div>
+    {{#if products.length}}
+    <table>
+        <tr class="contTitle">
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Foto</th>
+        </tr>
+        {{#each products}}
+        <tr class="contTitle">
+            <td>{{this.name}}</td>
+            <td>{{this.description}}</td>
+            <td>${{this.price}}</td>
+            <td>Stock: {{this.stock}}</td>
+            <td><img src={{this.img}} alt="image"></td>
+        </tr>
+        {{/each}}
+    </table>
+    {{else}}
+    <div>
+        <h2>DISCULPA NO TENEMOS EN STOCK , nuestros gatitos estan trabajando</h2>
+    </div>
+    {{/if}}
+</div>
